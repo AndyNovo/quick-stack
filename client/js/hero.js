@@ -13,6 +13,7 @@ var Characters = Backbone.Collection.extend({
 });
 
 $(document).ready(function(){
+  //WARNING this is a hello world, this style of rendering is not "the backbone way"
   $("body").html("<h1>List of Heroes:</h1><ul id=\"heroes\">...</ul><hr><button id=\"newhero\">Create New Hero</button>");
   var linkCounter = 1;
   var heroes = new Characters();
