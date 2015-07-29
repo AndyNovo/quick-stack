@@ -1,0 +1,8 @@
+<h1>Array of things example</h1>
+<ul>
+  <li ng-repeat="person in people">{{person.name}}</li>
+</ul>
+<form ng-submit="addPerson()">
+    <button type="submit">Add a person</button>
+    <input type="text" ng-model="name" placeholder="Name your person"></input>
+</form>
