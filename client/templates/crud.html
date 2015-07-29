@@ -1,0 +1,16 @@
+<h1>Create, Read, Update, Destroy example</h1>
+<ul>
+  <li ng-repeat="person in people">
+    <span>{{person.name}}</span> 
+    <button type="btn" ng-click="destroy(person)">destroy</button> 
+    <button type="btn" ng-click="toggleEditMode(this)">Edit</button>
+    <form ng-submit="toggleEditMode(this); savePerson(person)" ng-show="this.editMode || false">
+      <button type="submit">Save changes</button>
+      <input type="text" ng-model="this.person.name"></input>
+    </form>
+  </li>
+</ul>
+<form ng-submit="addPerson()">
+    <button type="submit">Add a person</button>
+    <input type="text" ng-model="name" placeholder="Name your person"></input>
+</form>
