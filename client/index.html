@@ -6,8 +6,15 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
         <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+    </head>
     <body>
        You are running the quick stack!
     </body>
-    <script src="/js/multipage.js"></script>
+    <script type="text/template" id="book-template">
+    <h2><%= title %></h2>
+    <h3>By: <strong><%= author %></strong></h3>
+    <hr>
+    <button type="button" id="order">Click here to purchase this book</button>
+    </script>
+    <script src="/js/view.js"></script>
 </html>
